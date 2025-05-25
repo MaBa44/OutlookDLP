@@ -15,6 +15,18 @@ Public Class EncryptionForm
 
     Public Sub New()
         InitializeComponent()
+        
+        ' Apply localization
+        ApplyLocalization()
+    End Sub
+
+    Private Sub ApplyLocalization()
+        ' Set form title and labels from resources
+        Me.Text = LocalizationManager.GetString("EncryptTitle")
+        lblPassword.Text = LocalizationManager.GetString("PasswordLabel")
+        lblPasswordDescription.Text = LocalizationManager.GetString("PasswordDescriptionLabel")
+        btnOK.Text = "OK"
+        btnCancel.Text = LocalizationManager.GetString("ButtonCancel")
     End Sub
 
     Private Sub InitializeComponent()
@@ -106,14 +118,22 @@ Public Class EncryptionForm
     Private Sub btnOK_Click(sender As Object, e As EventArgs)
         ' Validate inputs
         If String.IsNullOrWhiteSpace(txtPassword.Text) Then
-            MessageBox.Show("Please enter a password.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show(
+                LocalizationManager.GetString("PasswordRequired"),
+                LocalizationManager.GetString("ValidationError"),
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Error)
             txtPassword.Focus()
             Me.DialogResult = DialogResult.None
             Return
         End If
 
         If String.IsNullOrWhiteSpace(txtPasswordDescription.Text) Then
-            MessageBox.Show("Please enter a password description.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show(
+                LocalizationManager.GetString("PasswordDescriptionRequired"),
+                LocalizationManager.GetString("ValidationError"),
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Error)
             txtPasswordDescription.Focus()
             Me.DialogResult = DialogResult.None
             Return

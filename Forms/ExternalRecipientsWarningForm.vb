@@ -15,7 +15,21 @@ Public Class ExternalRecipientsWarningForm
     Public Sub New(ByVal externalRecipients As List(Of String))
         InitializeComponent()
         _externalRecipients = externalRecipients
+        
+        ' Apply localization
+        ApplyLocalization()
+        
+       ' Populate the recipients list
         PopulateRecipientsList()
+    End Sub
+
+    Private Sub ApplyLocalization()
+        ' Set form title and labels from resources
+        Me.Text = LocalizationManager.GetString("WarningTitle")
+        lblWarning.Text = LocalizationManager.GetString("WarningMessage")
+        btnCancel.Text = LocalizationManager.GetString("ButtonCancel")
+        btnEncrypt.Text = LocalizationManager.GetString("ButtonEncrypt")
+        btnSend.Text = LocalizationManager.GetString("ButtonSend")
     End Sub
 
     Private Sub InitializeComponent()

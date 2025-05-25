@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="WarningTitle" xml:space="preserve">
+    <value>Warnung vor externen Empfängern</value>
+  </data>
+  <data name="WarningMessage" xml:space="preserve">
+    <value>Die E-Mail wird an folgende externe Empfänger gesendet:
+Sind Sie sicher, dass Ihre E-Mail keine sensiblen Informationen enthält? Wenn ja, klicken Sie bitte auf die Schaltfläche "Abbrechen" und entfernen Sie dann vertrauliche Informationen oder verschlüsseln Sie die Nachricht, indem Sie auf die Schaltfläche "Verschlüsseln" klicken.</value>
+  </data>
+  <data name="ButtonCancel" xml:space="preserve">
+    <value>Abbrechen</value>
+  </data>
+  <data name="ButtonEncrypt" xml:space="preserve">
+    <value>Verschlüsseln</value>
+  </data>
+  <data name="ButtonSend" xml:space="preserve">
+   <value>Senden</value>
+  </data>
+  <data name="EncryptTitle" xml:space="preserve">
+    <value>E-Mail verschlüsseln</value>
+  </data>
+  <data name="PasswordLabel" xml:space="preserve">
+    <value>Passwort:</value>
+  </data>
+  <data name="PasswordDescriptionLabel" xml:space="preserve">
+    <value>Passwortbeschreibung:</value>
+  </data>
+  <data name="PasswordRequired" xml:space="preserve">
+    <value>Bitte geben Sie ein Passwort ein.</value>
+  </data>
+  <data name="PasswordDescriptionRequired" xml:space="preserve">
+    <value>Bitte geben Sie eine Passwortbeschreibung ein.</value>
+  </data>
+  <data name="ValidationError" xml:space="preserve">
+    <value>Validierungsfehler</value>
+  </data>
+  <data name="ConfigurationError" xml:space="preserve">
+    <value>Fehler beim Laden akzeptierter Domains: {0}</value>
+  </data>
+  <data name="ConfigurationErrorTitle" xml:space="preserve">
+    <value>Konfigurationsfehler</value>
+  </data>
+  <data name="EncryptionError" xml:space="preserve">
+    <value>Fehler beim Verschlüsseln der E-Mail: {0}</value>
+  </data>
+  <data name="EncryptionErrorTitle" xml:space="preserve">
+    <value>Verschlüsselungsfehler</value>
+  </data>
+  <data name="EncryptedSubjectPrefix" xml:space="preserve">
+    <value>[Verschlüsselt] </value>
+  </data>
+  <data name="EncryptedEmailBody" xml:space="preserve">
+    <value>Diese E-Mail enthält vertrauliche Informationen. Sie wurde verschlüsselt, um sicherzustellen, dass nur autorisierte Personen auf die in dieser E-Mail enthaltenen Informationen zugreifen können.
+
+Das Passwort für die Entschlüsselung lautet: {0}</value>
+  </data>
+</root>
