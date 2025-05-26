@@ -6,8 +6,10 @@ Imports Microsoft.Office.Interop.Outlook
 Imports System.Text.RegularExpressions
 Imports System.Linq
 Imports System.Globalization
-
+Imports Microsoft.Office.Tools.Outlook
+ 
 Public Class ThisAddIn
+    Inherits Microsoft.Office.Tools.Outlook.AddInBase
     Private WithEvents inspectors As Inspectors
     Private WithEvents mailItem As MailItem
     Private acceptedDomains As List(Of String) = New List(Of String)()
