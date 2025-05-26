@@ -86,6 +86,7 @@
     <Import Include="System.Linq" />
     <Import Include="System.Xml.Linq" />
     <Import Include="System.Threading.Tasks" />
+    <Import Include="Microsoft.Office.Tools.Outlook" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Forms\EncryptionForm.vb">
