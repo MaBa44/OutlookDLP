@@ -1,0 +1,6 @@
+C:\Users\mbajo\source\repos\MaBa44\OutlookDLP\obj\Debug\OutlookDLP.vbproj.AssemblyReference.cache
+C:\Users\mbajo\source\repos\MaBa44\OutlookDLP\obj\Debug\OutlookDLP.Strings.resources
+C:\Users\mbajo\source\repos\MaBa44\OutlookDLP\obj\Debug\OutlookDLP.Strings.de-DE.resources
+C:\Users\mbajo\source\repos\MaBa44\OutlookDLP\obj\Debug\OutlookDLP.Strings.pl-PL.resources
+C:\Users\mbajo\source\repos\MaBa44\OutlookDLP\obj\Debug\OutlookDLP.vbproj.GenerateResource.cache
+C:\Users\mbajo\source\repos\MaBa44\OutlookDLP\obj\Debug\OutlookDLP.vbproj.CoreCompileInputs.cache
