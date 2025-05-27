@@ -9,10 +9,13 @@ Extend the sample Outlook VSTO add-in code (using VB.NET) to perform the followi
 6. if user chooses "Cancel" option - do not send an email and return to mail compose window.
 
 Definition of an external recipient:
-- a recipient with domain name not found in a list of accepted domains stored in a configuration file called "accepted_domains.txt".
+- a recipient with domain name not found in a list of accepted domains stored in the registry entry named "internal_domains". This registry entry contains a list of domain names separated by spaces, eg. "example.com example.org example.io".
+
+Add-in configuration:
+The add-in should allow displaying the value stored in the registry entry named "internal_domains". If registry entry named "internal_domains_aditable" is set to True (default value), than editing the value stored in the registry entry named "internal_domains" should be allowed, otherwise it should not be allowed. There should be no possibility to change the value of registry entry named "internal_domains_aditable" through the add-in configuration.
 
 Note:
-- the add-in should work only when the sender is inside the organization (i.e. has domain name specified in the file "accepted_domains.txt").
+- the add-in should work only when the sender is inside the organization (i.e. has domain name specified in the registry entry named "internal_domains").
 - the add-in should be able to handle multiple recipients.
 - the add-in should be able to handle emails with attachments.
 - the add-in should be able to handle emails with HTML content.
